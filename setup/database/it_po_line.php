@@ -1,0 +1,62 @@
+<?php
+
+// IT PO line Table
+
+
+$sql = " create table if not exists `it_po_line` (
+
+    `id` int(11) NOT NULL AUTO_INCREMENT,
+
+    `creation_date` timestamp NOT NULL DEFAULT current_timestamp(),
+    
+   
+    `po_id` int(11) null,
+
+    `item_no` varchar(160) null,
+    `item_description` varchar(255) null,
+   
+   
+    
+
+   
+
+    
+
+    
+
+    `quantity` int(11) null,
+
+    `status` varchar(45) null,
+
+    `uint_price` decimal(13,2) null,
+
+    `vat_percentage` varchar(45) null, 
+
+    `total_amount` decimal(13,2) null,
+
+    `total_amount_with_vat` decimal(13,2) null,
+
+    `received_quantity` int(11) null,
+
+    `remaining_quantity` int(11) null,
+
+    `uint_price_vat` decimal(13,2) null,
+
+    
+    
+    PRIMARY KEY (`id`)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+";
+
+
+
+if($conn->query($sql))
+{
+    echo("<p class='alert-success'> it_po_line Table created successfully  </p><hr>");
+}
+else
+{
+    echo("<p class='alert-danger'> it_po_line Table Not Created ! </p><hr>");
+}
+
+?>

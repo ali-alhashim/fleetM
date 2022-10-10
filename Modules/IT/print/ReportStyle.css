@@ -1,0 +1,79 @@
+.page-title
+{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.carTable
+{
+    width: 100%;
+    border: solid lightgray 1px;
+    text-align: center;
+}
+
+.carTable thead{
+
+    background-color: rgb(235, 235, 235);
+}
+
+.logo
+{
+    width: 100px;
+    position: absolute;
+    top: 1cm;
+}
+
+.bg-sliver
+{
+  background: linear-gradient(90deg, rgba(166,166,166,1) 0%, rgba(226,225,225,1) 47%, rgba(139,134,134,1) 100%);
+}
+
+tr{
+    page-break-inside: avoid;
+    page-break-after: auto;
+}
+
+table {
+    page-break-inside: auto;
+  }
+
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+  }
+
+
+  .expired-red{
+
+    background-color: rgba(250, 160, 178, 0.699);
+  }
+
+  /**Mobile Screen*/
+@media only screen and (max-width: 700px) {
+
+    .btn-akhOrange
+    {
+      margin-top: 10px;
+    }
+    .carDataTable
+    {
+      max-width: 100vw;;
+    }
+    .hidecolumns
+    {
+      display: none;
+    }
+  
+    html{
+      font-size: xx-small;
+    }
+
+    .logo
+{
+    width: 80px;
+    position: absolute;
+    top: 0.5cm;
+}
+   
+  }
+
